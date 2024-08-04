@@ -1,0 +1,195 @@
+--[[
+██╗  ██╗███████╗██╗██╗  ██╗ █████╗ 
+██║  ██║██╔════╝██║██║ ██╔╝██╔══██╗
+███████║█████╗  ██║█████╔╝ ███████║
+██╔══██║██╔══╝  ██║██╔═██╗ ██╔══██║
+██║  ██║███████╗██║██║  ██╗██║  ██║
+╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═╝╚═╝  ╚═╝
+
+Made By Heika 
+Open Source 😘
+--]]
+
+
+local Heika = loadstring(game:HttpGet("https://raw.githubusercontent.com/FrolicsomeNuvi/KavoUI/main/Heika-KavoUI"))();
+local Window = Heika.CreateLib("Heika - Legends of Speed", "RJTheme5");
+
+--> Variables <--
+_G.Steps = true
+_G.Gems = true
+_G.Rebirth = true
+getgenv().autofarm = false
+getgenv().hoop = false
+getgenv().rebirthtoggle = false
+getgenv().crystaltoggle = false
+getgenv().eggtoggle = false
+getgenv().cityorb = false
+getgenv().snoworb = false
+getgenv().magmaorb = false
+getgenv().legendsorb = false
+getgenv().BugPet = true
+local selectcity
+local playerpart = game.Players.LocalPlayer.Character.Head
+local plyr = game.Players.LocalPlayer
+
+--> Functions <--
+local function XP()
+    while _G.XP == true do
+        game.ReplicatedStorage.rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+        wait(.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
+    end
+end
+
+function hoops()
+    while isHoopsRunning do
+        local player = game.Players.LocalPlayer
+        local playerCharacter = player.Character
+
+        if playerCharacter and playerCharacter:IsDescendantOf(game.Workspace) then
+            local playerPart = playerCharacter.PrimaryPart
+
+            for _, v in pairs(game.Workspace.Hoops:GetDescendants()) do
+                if v.Name == "TouchInterest" then
+                    firetouchinterest(playerPart, v.Parent, 0)
+                    wait(0.1)
+                    firetouchinterest(playerPart, v.Parent, 1)
+                end
+            end
+        end
+
+        wait()
+    end
+end
+
+ function BugPet()
+        while getgenv().BugPet == true do
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+            game:GetService("ReplicatedStorage").rEvents.rebirthEvent:FireServer("rebirthRequest")
+            wait(0.1)
+        end
+    end
+
+
+function places(city)
+    if city == "Main City" then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9682.98828, 74.8522873, 3099.03394, 0.087131381, 0, 0.996196866, 0, 1, 0, -0.996196866, 0, 0.087131381)
+    elseif city == "Snow City" then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9676.13867, 74.8522873, 3782.69385, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+    elseif city == "Magma City" then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-11054.9688, 232.791656, 4898.62842, -0.0872479677, 0.000158954252, -0.996186614, -0.00054083002, 0.999999821, 0.00020692969, 0.996186495, 0.000556821818, -0.0872478485)
+    elseif city == "Legends Highway" then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-13098.8711, 232.791656, 5907.62793, -0.0872479677, 0.000158954252, -0.996186614, -0.00054083002, 0.999999821, 0.00020692969, 0.996186495, 0.000556821818, -0.0872478485)
+    end
+end
+
+--> Pages <--
+local ATab = Window:NewTab("Main Menu");
+local Autofarm = ATab:NewSection("Autofarm Options");
+local KTab = Window:NewTab("Keybinds")
+local Keybind = KTab:NewSection("Keybinds")
+
+
+
+--> Autofarm <--
+Autofarm:NewToggle("Autofarm Steps", "", function(value)
+    _G.Steps = value
+    while _G.Steps do
+        game.ReplicatedStorage.rEvents.orbEvent:FireServer("collectOrb", "Red Orb", "City")
+        wait(0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
+    end
+end);
+
+Autofarm:NewToggle("Autofarm Gems", "", function(value)
+    _G.Gems = value
+    while _G.Gems do
+        game.ReplicatedStorage.rEvents.orbEvent:FireServer("collectOrb", "Gem", "City")
+        wait(.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
+    end
+end);
+
+Autofarm:NewToggle("Auto Rebirth", "", function(value)
+    _G.Rebirth = value
+    while _G.Rebirth do
+        game.ReplicatedStorage.rEvents.rebirthEvent:FireServer("rebirthRequest")
+        wait(.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
+    end
+end);
+
+Autofarm:NewToggle("Autofarm XP", "", function(value)
+    _G.XP = value
+    while _G.XP do
+        game.ReplicatedStorage.rEvents.orbEvent:FireServer("collectOrb", "Yellow Orb", "City")
+        wait(.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
+    end
+end);
+
+Autofarm:NewToggle("Autofarm Hoops", "", function(value)
+    if value then
+        if not isHoopsRunning then
+            hoopsTask = spawn(hoops)
+            isHoopsRunning = true
+        end
+    else
+        if isHoopsRunning then
+            isHoopsRunning = false  -- Immediately stop the hoops loop
+            if hoopsTask then
+                hoopsTask:Destroy()  -- Destroy the task to stop it completely
+                hoopsTask = nil
+            end
+        end
+    end
+end);
+
+--> Toggle Ui <--\
+Keybind:NewKeybind("Toggle UI", "", Enum.KeyCode.F6, function()
+    Heika:ToggleUI()
+end)
